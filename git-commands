@@ -1,0 +1,51 @@
+main/ master being name of branches
+
+git init
+git config --global core.autocrlf true
+git add .
+git commit -m "First commit"
+git remote add origin <remote repository URL>
+git remote -v
+
+https://rogerdudler.github.io/git-guide/
+
+Branch operations
+git switch,	 switches branch
+,git branch -a	- shows all branches
+ git branch (name of new branch),	- creates new branch
+
+Set Git config if login lost or messed up
+git config --global user.name "Your name here"
+git config --global user.email "your_email@example.com"
+
+Delete .git folder to remove git initialization from local repository
+git remote remove origin ---- drops remote URL
+
+Delete remote branch (should not be default)
+git push origin --delete main
+
+Delete local branch
+git branch -d main
+
+REMOVE directory
+
+git rm -r "test di"
+git commit -m "msg"
+git push origin master
+
+REMOVE DIRECTORY/FILES by giving path
+git rm -r bin/Debug/netcoreapp3.1/cs/*
+git commit -m "msg"
+git push origin master
+
+
+REMOVE file
+
+git rm "filename"
+git commit -m "hfird"
+git push origin master
+
+
+Switch to a previous commit
+git checkout -b branch-01 3e9f01fe687c26a4927282511ff336fca4f0f611 (commit id to be taken from github repo commit page)
+git push origin branch-01
